@@ -1,0 +1,268 @@
+<!-- Hey! If you've made it here, this is my code or what I like to refer to as my poetry. Have fun.
+
+Developed by: Jesse Emamalie
+Date Created:
+Description: My personal portfolio website for displaying my work. -->
+<html lang="en" dir="ltr">
+	<head>
+		<title>Web Designer - Jesse Emamalie</title>
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico"/>
+		<script type="text/javascript" src="JS/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="JS/scrolling.js"></script>
+		<script type="text/javascript" src="JS/client_info.js"></script>
+		<script type="text/javascript" src="JS/slideshow.js"></script>
+		<!--Imports google font-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500,900" rel="stylesheet">
+	</head>
+
+	<body>
+
+	<!-- main div begin -->
+	<section class="main">
+		<div id="mask"> <!--makes background grey -->
+			<nav> <!--content bar-->
+				<UL>
+					<LI><a href="#services" id="service_link">SERVICES</a>
+					<LI><a href="#about">ABOUT</a>
+					<LI><a href="#portfolio">PORTFOLIO</a>
+					<LI><a href="#contacts">CONTACT</a>
+				</UL>
+			</nav>
+
+			<h1 id="banner_text">A WEBSITE REFLECTS THE IMAGE BEHIND A COMPANY. <br> I DESIGN WEBSITES THAT HELP YOU ESTABLISH AN ONLINE PRESENCE.</h1> <!-- caption-->
+
+		<div id="scroll_triangle"></div> <!--Triangle that slides down to content-->
+		</div>
+	</section>
+	<!-- main div end -->
+
+	<!-- Services div starts. Uses light theme -->
+	<a id="services">
+	<section class="services">
+		<div class="dark_theme_title"><h1>SERVICES</h1></div>
+		<!--beginning of slideshow-->
+		<div id="slideshow">
+			<!--reel of slides -->
+			<div id="slidebar">
+				<!--arrows-->
+				<p id="prev">&#10094;</p>
+				<!--thumbnail bar-->
+				<div id="thumbnail_container">
+
+					<div class="thumbnails">
+						<img src="icons/web_design.png">
+						<p3>WEB DESIGN<br>Your online presence is said to be the window to what you represent,
+						 therefore it is important to create a meaningful presence. Websites are therefore uniquely designed
+						 according to your needs with as little hassle as possible. This service is done in a manner that is
+						 as worry-free to the customer as possible, with timely deadlines fulfilled and prompt feedback. Services also
+						 include demonstration of the website to clients, website hosting and monthly maintenance.</p3>
+						<div class="slide_tiles"></div>
+					</div>
+
+					<div class="thumbnails">
+						<img src="icons/graphic_design.png">
+						<p3>GRAPHIC DESIGN<br>A picture speaks a thousand words.
+						High quality graphics are designed in Photoshop and are edited to perfection.
+						Services include the designs of logos, animations, special effects and
+						manipulation of images. Eye-catching flyers, call cards, letterheads
+						and other branding methods are uniquely created and delivered to
+						suit the image you want to project.</p3>
+						<div class="slide_tiles"></div>
+					</div>
+
+					<div class="thumbnails">
+						<img src="icons/responsive.png">
+						<p3>RESPONSIVE DESIGN<br>It's a known fact that the devices surfing through the internet
+						has changed over time. The device paradigm has shifted from desktops to include laptops, tablets
+						and mobile phones. It is therefore essential for your website to portray a beautiful aesthetic
+						despite the device it is displayed on. Websites designed here are built for most modern devices,
+						despite screen size or operating system so that you don't lose any consumer demographic.</p3>
+						<div class="slide_tiles"></div>
+					</div>
+
+					<div class="thumbnails">
+						<img src="icons/mobile_apps.png">
+						<p3>ANDROID APP DESIGN<br>Approximately 3 out of 4 mobile users are using the android platform.
+						The mass overtaking of the android system therefore provides every reason to build and launch your
+						mobile app on the play store. Services also include updating, maintenance and deployment of apps
+						in order to give your mobile app the perfect look and feel.</p3>
+						<div class="slide_tiles"></div>
+					</div>
+
+				</div>
+				<p id="next">&#10095;</p>
+			</div>
+
+			<!--extended content-->
+			<div id="slideshow_items">
+				<div class="large_icons"></div>
+				<div class="slide_text">
+					<div id="slide_title"></div>
+					<div id="slide_description"></div>
+				</div>
+			</div>
+		</div>
+		<!--close of slideshow-->
+	</section>
+	<!-- Services div ends -->
+
+	<!-- About div begins -->
+	<a id="about">
+	<section class="about">
+
+		<div class="light_theme_title"><h1>ABOUT ME</h1></div>
+
+		<div id="about_container">
+			<!--my picture-->
+			<img src="icons/cartoon.png">
+
+			<div class="about_text">
+				<div id="about_description">It's a bird! It's a plane! It's a...cartoon? I'm Jesse
+				Emamalie and despite my animated look, I'm actually human in real life. Technology has always been my passion,
+			and I've been programming ever since my teenage days, with my technological experience spreading across
+		many areas. I'm currently pursuing a BSc. in Computer Science at UWI. In my free time,
+		I enjoy weightlifting and tinkering with cars.</div>
+			</div>
+		</div>
+	</section>
+	<!-- About div ends -->
+
+	<!--Clients div begins-->
+	<a id="portfolio">
+	<section class="clients">
+
+		<div class="dark_theme_title"><h1>PORTFOLIO</h1></div>
+		<!--entire client card rows combined inside here-->
+
+		<div class="container">
+
+			<div id="client_card_wrapper">
+				<div class="client_card" id="one">
+					<div class="flipper">
+						<div class="front">
+						</div>
+						<div class="back">
+							<div class="card_title">JJIM Trading</div>
+							<div class="expand_button" id="one">MORE INFO</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="client_card_wrapper">
+				<div class="client_card" id="two">
+					<div class="flipper">
+						<div class="front">
+						</div>
+						<div class="back">
+							<div class="card_title">SV Fansite</div>
+							<div class="expand_button" id="two">MORE INFO</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="client_card_wrapper">
+				<div class="client_card" id="three">
+					<div class="flipper">
+						<div class="front">
+						</div>
+						<div class="back">
+							<div class="card_title">Weight Tracker</div>
+							<div class="expand_button" id="three">MORE INFO</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="client_card_wrapper" class="soon">
+				<div class="client_card" id="four">
+					<div class="flipper">
+						<div class="front" >
+						</div>
+						<div class="back">
+							<div class="card_title">COMING SOON!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="client_card_wrapper" class="soon">
+				<div class="client_card" id="five">
+					<div class="flipper">
+						<div class="front" >
+						</div>
+						<div class="back">
+							<div class="card_title">COMING SOON!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="client_card_wrapper" class="soon">
+				<div class="client_card" id="six">
+					<div class="flipper">
+						<div class="front" >
+						</div>
+						<div class="back">
+							<div class="card_title">COMING SOON!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--end of clients div-->
+</section>
+
+	<!--modal window contents
+			Background mask-->
+			<div id="modal_window">
+				<!--content window-->
+				<div id="modal_content">
+					<!--large image of client's website
+						set as background of div-->
+					<div id="large_website_img">
+						<!--close button over image-->
+						<span id="close_button">&times;</span>
+					</div>
+					<!--text div where info about website will be stored-->
+					<div id="client_text">
+						<div id="client_title"></div>
+						<div id="client_desc"></div>
+						<a href="" target="_blank" id="website_link"><div id="launch_website">LAUNCH WEBSITE</div></a>
+					</div>
+				</div>
+			</div>
+	<!--end of modal window. (Default display is set to none to keep it hidden from view) -->
+
+	<a id="contacts">
+	<section class="contact_form">
+		<div class="light_theme_title"><h1>GET IN TOUCH</h1></div>
+		<!--form posts data to php script-->
+		<form action="post_email.php" method="post">
+			<input type="text" name="name" id="name" placeholder="Name *" maxlength="30" required />
+			<input type="text" name="email" id="email" placeholder="Email *" maxlength="40" required/>
+			<input type="text" name="budget" id="budget" placeholder="Budget"/>
+			<textarea cols="40" rows="5" name="project_desc" id="project_desc" placeholder="Tell me a bit about your project"></textarea>
+			<input type="submit" name="submit" id="submit" value="SUBMIT"/>
+		</form>
+	</section>
+
+	<footer>
+		<div id="social_media">
+			<img src="icons/social_media/facebook.png">
+			<img src="icons/social_media/twitter.png">
+			<img src="icons/social_media/instagram.png">
+		</div>
+		<h3 id="copyright">&copy; Jesse Emamalie Designs</h3>
+	</footer>
+
+	</body>
+</html>
