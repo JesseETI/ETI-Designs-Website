@@ -6,7 +6,7 @@ html, body, h1 {
 .main {
     width: 100%;
     height: 100vh;
-    background:url("icons/workspace.png") center center fixed no-repeat;
+    background:url("../icons/workspace.png") center center fixed no-repeat;
     background-size:cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -801,17 +801,17 @@ footer {
 	/*set card background as client website*/
 
 	#one{
-		background-image: url('icons/jjim_ss.png');
+		background-image: url('../icons/jjim_ss.png');
 		background-size: 100% 100%;
 	}
 
 	#two{
-		background-image: url('icons/sv_ss.png');
+		background-image: url('../icons/sv_ss.png');
 		background-size: 100% 100%;
 	}
 
 	#three{
-		background-image: url('icons/django_ss.png');
+		background-image: url('../icons/django_ss.png');
 		background-size: 100% 100%;
 	}
 
@@ -826,7 +826,7 @@ footer {
 @media (max-width:600px) {
 
 	.main {
-	    	background-image:url("icons/workspace_600px.png");
+	    	background-image:url("../icons/workspace_600px.png");
 	    }
 
 	.thumbnails p3 {
@@ -851,7 +851,7 @@ footer {
 
 @media (max-width:450px) {
 	.main {
-	    	background-image:url("icons/workspace_450px.png");
+	    	background-image:url("../icons/workspace_450px.png");
 	    }
 
 	nav li {
@@ -884,7 +884,7 @@ footer {
 
 @media (max-width:330px) {
 	.main {
-	    	background-image:url("icons/workspace_300px.png");
+	    	background-image:url("../icons/workspace_300px.png");
 	    }
 
 	nav li {
