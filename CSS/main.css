@@ -5,21 +5,21 @@ html, body, h1 {
 
 .main {
     width: 100%;
-    height: 100vh;
-    background:url("../icons/workspace.png") center center fixed no-repeat;
+    min-height: 100vh;
+    background:url("../icons/workspace.png") center fixed no-repeat;
     background-size:cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-		display: flex;
-		align-items: center; /* aligns items vertically */
-		text-align: center;
-		justify-content: center; /* aligns text horizontally */
+    display: flex;
+    align-items: center; /* aligns items vertically */
+    text-align: center;
+    justify-content: center; /* aligns text horizontally */
 }  /*set main as landing div*/
 
 #mask {
     width:100%;
-    height:100%;
+    min-height:100vh;
     background-color:#333333;
     opacity:0.9;
     -khtml-opacity: 0.9;
@@ -28,11 +28,6 @@ html, body, h1 {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 } /*grey background*/
 
-nav {
-    min-height:3rem;
-    margin:0px auto;
-    text-align:center;
-} /*center div for links*/
 
 nav li {
     color:#ffffff;
@@ -50,11 +45,10 @@ nav a {
 #banner_text {
     font-family: "Roboto", sans-serif;
     margin:0px auto;
-		text-align: center;
     color:#ffffff;
     width:70%;
     font-size:1.5rem;
-		margin-top:40vh;
+    margin-top:40vh;
 }
 
 #scroll_triangle {
@@ -146,7 +140,6 @@ nav a {
 
 .services {
     width:100%;
-    height:auto;
     background-color:#292828;
 }
 
@@ -159,7 +152,6 @@ nav a {
     width:100%;
     height:20vh;
 		display: flex;
-		flex-direction: row;
 }
 
 /*previous, next button*/
@@ -189,12 +181,11 @@ nav a {
 
 .thumbnails {
     width:25%;
-		float:left;
+    float:left;
 }
 
 .thumbnails img {
 	width:50%;
-	height:auto;
 	display: block;
 	margin: auto;
 }
@@ -203,13 +194,14 @@ nav a {
 	padding-top: 5%;
 	font-family: "Roboto", sans-serif;
 	color:white;
-	font-size:1.2rem;
+	font-size:0.9rem;
 	text-align: center;
+    line-height: 2.0;
+    margin: auto;
 	display:none;
 }
 
 .slide_tiles, .current_tile  {
-	display: block;
 	margin: auto;
 	width:70%;
 	height:0.8rem;
@@ -233,7 +225,6 @@ nav a {
     width:100%;
     height:70vh;
 		display: flex;
-		flex-direction: row;
 }
 
 .large_icons {
@@ -247,33 +238,30 @@ nav a {
 }
 
 #slide_title {
-		padding-top: 5%;
+    padding-top: 5%;
     font-family: "Roboto", sans-serif;
     font-size:1.5rem;
-    height:10%;
-    margin:0px auto;
     text-align:center;
 }
 
 #slide_description {
     word-wrap: break-word;
-		font-family:"Roboto", sans-serif;
-		text-align:justify;
+    font-family:"Roboto", sans-serif;
+    text-align:justify;
     font-size:0.9rem;
     height:75%;
-		line-height: 2.0;
+    line-height: 2.0;
     overflow:auto;
     margin: 5%;
 }
 
 .about {
     width:100%;
-		height:auto;
+		min-height: 100vh;
 		background-color: white;
 }
 
 #about_container {
-    width:100%;
 		min-height:90vh;
 		display: flex;
 }
@@ -297,11 +285,11 @@ nav a {
 #about_description {
     font-family:"Roboto", sans-serif;
     font-size:0.9rem;
-		margin: 5%;
-		padding: 10% 10% 10% 10%;
+		word-wrap: break-word;
+		text-align: justify;
+		padding: 10%;
 		background-color: white;
 		line-height: 2.0;
-		text-align: justify;
 }
 
 .clients {
@@ -310,9 +298,8 @@ nav a {
     background-color:#292828;
 }
 
-.container {
+.client_container {
 		width:90%;
-		height: auto;
 		margin:auto;
   	overflow:hidden;
 }
@@ -320,13 +307,12 @@ nav a {
 #client_card_wrapper {
 		width:33%;
 		height:40%;
-		padding-bottom: 2rem;
-		float: left;
+		padding-bottom: 3.5%;
+		float: right;
 }
 
 .client_card {
     width:80%;
-		height:auto;
     perspective:1000px;
 }
 
@@ -375,10 +361,9 @@ nav a {
 
 .card_title {
 	width:50%;
-	margin: auto;
+	margin:auto;
 	margin-top:10%;
 	background-color:#333333;
-	display:block;
 	text-align:center;
 	color:white;
 	font-family:"Roboto", sans-serif;
@@ -387,7 +372,6 @@ nav a {
 
 .expand_button {
 	background-color:transparent;
-	display:block;
 	margin:auto;
 	margin-top:10%;
 	width:40%;
@@ -429,9 +413,7 @@ nav a {
 
 #modal_content {
 	background-color:white;
-	margin: 5% auto; /* 15% from the top and centered */
   padding: 0.5em;
-  border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   height:80%;
   position:relative;
@@ -502,14 +484,12 @@ nav a {
 
 #close_button:hover {
     color: #333333;
-    text-decoration: none;
     cursor: pointer;
 }
 
 #large_website_img {
 	height:100%;
 	width:60%;
-	display:inline-block;
 	float:left;
 }
 
@@ -517,12 +497,9 @@ nav a {
 	height:100%;
 	width:38.5%;
 	overflow:auto;
-	display:inline-block;
-	float:left;
 	padding:0% 0.5% 0% 1%;
 	background-color:white;
 	overflow: auto;
-	margin:0px auto;
 }
 
 #client_text a {
@@ -554,9 +531,9 @@ nav a {
 	background-color:transparent;
 	width:50%;
 	padding:5%;
-	color:#333333;
-	left:20%;
+	margin:auto;
 	margin-bottom:5%;
+	color:#333333;
 	position:relative;
 	font-family:sans-serif;
 	text-align:center;
@@ -564,7 +541,7 @@ nav a {
 	-o-transition: 1s;
 	-ms-transition: 1s;
 	-moz-transition: 1s;
-    transition: 1s;
+	transition: 1s;
 	font-weight:bold;
 	border-style: solid;
 	border-color:#333333;
@@ -572,7 +549,7 @@ nav a {
 	-o-border-radius: 1em;
 	-ms-border-radius: 1em;
 	-webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
+  -moz-border-radius: 1em;
 }
 
 #launch_website:hover {
@@ -582,8 +559,9 @@ nav a {
 
 .contact_form {
 	width:100%;
-	height:100vh;
+	min-height:100vh;
 	background-color:#ffffff;
+	overflow:auto;
 }
 
 form {
@@ -592,7 +570,7 @@ form {
 
 input, textarea {
 	width:40%;
-	height:3rem;
+	padding: 5%;
 	display:block;
 	margin: 0px auto;
 	margin-top:1rem;
@@ -606,15 +584,11 @@ input, textarea {
 	font-size:1.2rem;
 }
 
-textarea {
-	height:7.5rem;
-}
-
 #submit {
 	background-color:#333333;
 	width:15%;
 	margin:0px auto;
-	height:13%;
+	padding:3%;
 	color:white;
 	margin-top:3%;
 	-webkit-transition: 1s;
@@ -633,10 +607,10 @@ textarea {
 
 footer {
 	width:100%;
-	height:30vh;
+	min-height:30vh;
 	background-color:#292828;
+	overflow:auto;
 }
-
 
 #social_media {
 	display: block;
@@ -678,7 +652,6 @@ footer {
 	.expand_button {
 		margin-top:15%;
 		width:45%;
-		padding:5%;
 	}
 
 	#client_title {
@@ -687,7 +660,6 @@ footer {
 
 	#launch_website {
 		width:60%;
-		left:20%;
 		margin-bottom:5%;
 	}
 
@@ -732,9 +704,9 @@ footer {
 	}
 
 	#thumbnail_container {
-	    display:block;
-			padding-bottom: 10%;
-}
+		display:block;
+		padding-bottom: 10%;
+	}
 
 	.thumbnails {
 		width:91%;
@@ -749,14 +721,11 @@ footer {
 
 	.thumbnails p3 {
 		display: block;
-		font-size: 0.9rem;
-		line-height: 2.0;
-		margin: auto;
-		text-align: center;
 	}
 
 	.about_text {
 		width:100%;
+		height:25vh;
 	}
 
 	#about_container {
@@ -766,10 +735,6 @@ footer {
 	#about_container img {
 		width: 100%;
 		height:65vh;
-	}
-
-	.about_text {
-		height:25vh;
 	}
 
 	#about_description {
@@ -819,24 +784,17 @@ footer {
 		 display: none;
 	 }
 
-
-
 }
 
 @media (max-width:600px) {
-
-	.main {
-	    	background-image:url("../icons/workspace_600px.png");
-	    }
 
 	.thumbnails p3 {
 		 font-size: 0.8rem;
 	}
 
 	#about_description {
-			font-size:0.7rem;
-			margin:0% 5% 0% 5%;
-			padding: 1.5% 5% 1.5% 5%;
+		font-size:0.7rem;
+		padding: 1.5% 5% 1.5% 5%;
 	}
 
 	#submit {
@@ -850,13 +808,10 @@ footer {
 }
 
 @media (max-width:450px) {
-	.main {
-	    	background-image:url("../icons/workspace_450px.png");
-	    }
 
 	nav li {
-			font-size:1rem;
-			}
+        font-size:1rem;
+	}
 
 	#scroll_triangle {
 		margin-top:15%;
@@ -867,8 +822,8 @@ footer {
 	}
 
 	#about_description {
-	font-size:0.6rem;
-	padding: 2.5% 5% 2.5% 5%;
+		font-size:0.6rem;
+		padding: 2.5% 5% 2.5% 5%;
 	}
 
 	#client_card_wrapper {
@@ -883,9 +838,6 @@ footer {
 }
 
 @media (max-width:330px) {
-	.main {
-	    	background-image:url("../icons/workspace_300px.png");
-	    }
 
 	nav li {
 			font-size:0.7rem;
