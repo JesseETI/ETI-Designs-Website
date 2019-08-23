@@ -74,6 +74,7 @@ $(document).ready(function() {
 			hyperlink_button.attr("href", "http://etidesigns.pythonanywhere.com");
 			break;
 
+		/*
 		case "four":
 			title.text(client_id);
 			desc.text("lorem ipsum is simply dummy text of the \
@@ -109,7 +110,8 @@ $(document).ready(function() {
 						publishing software like aldus pagemaker including versions of lorem ipsum. ");
 			hyperlink_button.attr("href", "https://www.twitter.com/");
 			break;
-
+			*/
+			
 		default:
 			title.text(client_id);
 			desc.text("lorem ipsum is simply dummy text of the \
@@ -136,7 +138,7 @@ $(document).ready(function() {
 						electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with \
 						the release of letraset sheets containing lorem ipsum passages, and more recently with desktop \
 						publishing software like aldus pagemaker including versions of lorem ipsum. ");
-		launch_button.removeAttr("href");
+		hyperlink_button.removeAttr("href");
 	});
 
 	//close modal window if user clicks outside of modal window
@@ -153,7 +155,7 @@ $(document).ready(function() {
 						electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with \
 						the release of letraset sheets containing lorem ipsum passages, and more recently with desktop \
 						publishing software like aldus pagemaker including versions of lorem ipsum. ");
-		launch_button.removeAttr("href");
+		hyperlink_button.removeAttr("href");
 		}
 	});
 
