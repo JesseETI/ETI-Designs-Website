@@ -1,4 +1,6 @@
-# ETI Designs Website
+# ETI Designs Website (Version 1)
+
+This design is no longer used.
 
 Website for my personal web development business.
 
